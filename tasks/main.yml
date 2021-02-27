@@ -21,3 +21,9 @@
      - code
     state: latest
 
+- name: max_user_watches for vscode
+  sysctl:
+    name: fs.inotify.max_user_watches
+    value: 524288
+    reload: yes
+
